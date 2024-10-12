@@ -22,14 +22,14 @@ export default function Hero () {
                             <label>Search: *</label>
                             <div className="flex items-center bg-gray-50 h-[40px]">
                                 <CiSearch className="ps-2 text-green-600 text-[24px]" />
-                                <input type="text" placeholder="Search your keywords" className="ps-2 bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]"/>
+                                <input type="text" placeholder="Search your keywords" className="ps-2 focus:outline-none bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]"/>
                             </div>
                         </div>
                         <div className="flex flex-col mt-2">
                             <label>Select categories: *</label>
                             <div className="flex items-center bg-gray-50 h-[40px]">
                                 <AiFillHome className="ps-2 text-green-600 text-[24px]" />
-                                <select className="ps-2 bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]">
+                                <select className="ps-2 bg-gray-50 focus:outline-none sm:min-w-[310px] xs:min-w-[270px]">
                                     <option>Bungalow</option>
                                     <option>Office</option>
                                     <option>Apartment</option>
@@ -40,7 +40,7 @@ export default function Hero () {
                             <label>Price: *</label>
                             <div className="flex items-center bg-gray-50 h-[40px]">
                                 <HiCurrencyDollar className="ps-2 text-green-600 text-[24px]" />
-                                <select className="ps-2 bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]">
+                                <select className="ps-2 bg-gray-50 focus:outline-none sm:min-w-[310px] xs:min-w-[270px]">
                                     <option>100</option>
                                     <option>200</option>
                                     <option>300</option>
@@ -69,7 +69,7 @@ export default function Hero () {
                                 <label className="font-bold">Select your category: * </label>
                                 <div className="flex w-[350px] items-center mt-2 bg-gray-50">
                                     <AiFillHome className=" text-green-600 text-[24px] ml-2" />
-                                    <select id="location" name="location" className="w-[340px] h-[60px] bg-gray-50 mr-2">
+                                    <select id="location" name="location" className="w-[340px] focus:outline-none h-[60px] bg-gray-50 mr-2">
                                         <option value="bungalow">Bungalow</option>
                                         <option value="office">Office</option>
                                         <option value="apartment">Apartment</option>
@@ -80,7 +80,7 @@ export default function Hero () {
                                 <label className="font-bold">Price: * </label>
                                 <div className="flex w-[350px] bg-gray-50 items-center mt-2">
                                     <AiFillHome className=" text-green-600 text-[24px] ml-2" />
-                                    <select id="price" name="price" className="w-[340px] bg-gray-50  h-[60px] mr-2">
+                                    <select id="price" name="price" className="w-[340px] bg-gray-50 focus:outline-none h-[60px] mr-2">
                                         <option>100</option>
                                         <option>200</option>
                                         <option>300</option>
