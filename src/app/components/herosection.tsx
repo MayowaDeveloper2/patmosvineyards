@@ -26,7 +26,7 @@ export default function Hero () {
                         <div className="flex flex-col mt-2">
                             <label>Select categories: *</label>
                             <div className="flex items-center bg-gray-50 h-[40px]">
-                                <CiSearch className="ps-2 text-black text-[24px]" />
+                                <AiFillHome className="ps-2 text-black text-[24px]" />
                                 <select className="ps-2 bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]">
                                     <option>Bungalow</option>
                                     <option>Office</option>
