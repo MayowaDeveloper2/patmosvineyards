@@ -150,7 +150,7 @@ export default function BodyContent() {
                         ))}
                     </div>
                 </div>
-                <div className="hidden lg:block w-full mx-10 mt-10 ">
+                <div className="hidden lg:block w-[1500px] mx-10 mt-10 ">
                     <div className="relative flex gap-5 overflow-hidden">
                         {/* Left Arrow */}
                         <IoIosArrowDropleftCircle
