@@ -7,6 +7,7 @@ import patmos from "../images/blue-white-holiday-water-beach.jpg";
 import Typewriter from "./typewriter";
 import { CiSearch } from "react-icons/ci";
 import { AiFillHome } from "react-icons/ai";
+import { HiCurrencyDollar } from "react-icons/hi2";
 
 export default function Hero () {
     return (
@@ -15,19 +16,19 @@ export default function Hero () {
                 <Image className="w-full h-[600px]" src={patmos} alt=""/>
                 {/* mobile view */}
                 <div className="absolute top-28 lg:hidden">
-                   <p className="text-black font-bold  text-2xl  sm:w-[300px] xs:w-[280px]">Charming Patmos vacation Rental: <Typewriter text="Your wine" delay={100} /></p>
-                    <form className="flex flex-col mt-10 sm:min-w-[380px] xs:min-w-[340px]  bg-blue-300 h-[320px] pl-5 pr-5">
+                    <p className="text-black font-bold  text-2xl  sm:w-[300px] xs:w-[300px]">Patmos <Typewriter text="Vacation Rental" delay={100} /></p>
+                    <form className="flex flex-col mt-20 sm:min-w-[380px] xs:min-w-[340px]  bg-white h-[320px] pl-5 pr-5">
                         <div className="flex flex-col mt-4">
                             <label>Search: *</label>
                             <div className="flex items-center bg-gray-50 h-[40px]">
-                                <CiSearch className="ps-2 text-black text-[24px]" />
+                                <CiSearch className="ps-2 text-green-600 text-[24px]" />
                                 <input type="text" placeholder="Search your keywords" className="ps-2 bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]"/>
                             </div>
                         </div>
                         <div className="flex flex-col mt-2">
                             <label>Select categories: *</label>
                             <div className="flex items-center bg-gray-50 h-[40px]">
-                                <AiFillHome className="ps-2 text-black text-[24px]" />
+                                <AiFillHome className="ps-2 text-green-600 text-[24px]" />
                                 <select className="ps-2 bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]">
                                     <option>Bungalow</option>
                                     <option>Office</option>
@@ -38,7 +39,7 @@ export default function Hero () {
                         <div className="flex flex-col mt-2">
                             <label>Price: *</label>
                             <div className="flex items-center bg-gray-50 h-[40px]">
-                                <CiSearch className="ps-2 text-black text-[24px]" />
+                                <HiCurrencyDollar className="ps-2 text-green-600 text-[24px]" />
                                 <select className="ps-2 bg-gray-50 sm:min-w-[310px] xs:min-w-[270px]">
                                     <option>100</option>
                                     <option>200</option>
