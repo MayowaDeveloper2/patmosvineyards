@@ -150,7 +150,7 @@ export default function BodyContent() {
                         ))}
                     </div>
                 </div>
-                <div className="hidden lg:block mx-10 mt-10 ">
+                <div className="hidden lg:block w-full mx-10 mt-10 ">
                     <div className="relative flex gap-5 overflow-hidden">
                         {/* Left Arrow */}
                         <IoIosArrowDropleftCircle
@@ -161,7 +161,7 @@ export default function BodyContent() {
                         {/* Visible real estate items */}
                         <div className="flex gap-5 ">
                             {RealEstate.slice(currentIndex, currentIndex + visibleCount).map((realestate, index) => (
-                                <div key={index} className="flex-shrink-0 bg-gray-50  w-[360px] rounded-3xl h-[480px]">
+                                <div key={index} className="flex-shrink-0 bg-gray-50  w-[360px] md:w-[300px] rounded-3xl h-[480px]">
                                     <Image
                                         className="rounded-t-3xl w-[360px] h-[300px]"
                                         src={realestate.src}

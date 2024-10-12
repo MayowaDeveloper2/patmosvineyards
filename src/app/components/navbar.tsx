@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="flex justify-between px-[50px] lg:px-[100px] items-center h-[60px] w-full bg-green-600">
+            <nav className="z-50 flex justify-between px-[50px] lg:px-[100px] items-center h-[60px] w-full bg-green-600">
                 <div>
                     <Image className="w-[50px] h-[50px]" src={patmos} alt="Logo" />
                 </div>
@@ -28,10 +28,10 @@ export default function Navbar() {
                 </ul>
                 <div onClick={handleMenu}>
                     <button className="bg-blue-800 hover:bg-yellow-400 hidden lg:block lg:px-4 lg:py-2 text-white lg:rounded-full">Sign In</button>
-                    {isOpen ? <IoMdClose className="lg:hidden text-3xl font-bold" /> : <RiMenu3Fill  className="lg:hidden text-3xl font-bold"/>}
+                    {isOpen ? <IoMdClose className="lg:hidden text-3xl text-white font-bold" /> : <RiMenu3Fill  className="lg:hidden text-white text-3xl font-bold"/>}
                 </div>
             </nav>
-            <div className={`fixed h-screen top-14 left-0 w-[300px] bg-green-600 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+            <div className={`fixed z-50 h-screen top-14 left-0 w-[300px] bg-green-600 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <ul className="pt-5 pl-5 text-white">
                     <li className="py-2">Home</li>
                     <li className="py-2">About</li>
@@ -39,7 +39,7 @@ export default function Navbar() {
                     <li className="py-2">Help</li>
                 </ul>
                 <div className="mt-5 pl-5">
-                    <button className="bg-blue-800 hover:bg-yellow-400 px-6 py-2 text-white rounded-full">Sign In</button>
+                    <button className="bg-white hover:bg-green-300 px-6 py-2 text-black rounded-full">Sign In</button>
                 </div>
             </div> 
         </>
